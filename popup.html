@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WhatsApp Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>WhatsApp Translator</h3>
+    <label for="langFrom">Translate From:</label>
+    <select id="langFrom">
+        <option value="auto">Detect Language</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- Add more language options as needed -->
+    </select>
+
+    <label for="langTo">Translate To:</label>
+    <select id="langTo">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- Add more language options as needed -->
+    </select>
+
+    <button id="saveSettings">Save Settings</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
