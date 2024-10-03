@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>WhatsApp Translator</title>
     <style>
@@ -19,26 +18,27 @@
 
 <body>
     <h3>WhatsApp Translator</h3>
-    <label for="langFrom">Translate From:</label>
+    <label for="langFrom">Source Language:</label>
     <select id="langFrom">
-        <option value="auto">Detect Language</option>
         <option value="en">English</option>
-        <option value="hi">Hindi</option>
         <option value="es">Spanish</option>
         <option value="fr">French</option>
-        <!-- Add more language options as needed -->
+        <option value="de">German</option>
+        <option value="ja">Japanese</option>
+        <option value="ru">Russian</option>
     </select>
-
-    <label for="langTo">Translate To:</label>
+    
+    <label for="langTo">Target Language:</label>
     <select id="langTo">
         <option value="en">English</option>
-        <option value="hi">Hindi</option>
         <option value="es">Spanish</option>
         <option value="fr">French</option>
-        <!-- Add more language options as needed -->
+        <option value="de">German</option>
+        <option value="ja">Japanese</option>
+        <option value="ru">Russian</option>
     </select>
-
-    <button id="saveSettings">Save Settings</button>
+    
+    <button id="save-languages">Save Settings</button>
 
     <script src="popup.js"></script>
 </body>

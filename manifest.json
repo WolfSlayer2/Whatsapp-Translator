@@ -1,28 +1,25 @@
 {
     "manifest_version": 3,
     "name": "WhatsApp Translator",
+    "description": "Translate WhatsApp Web messages to and from your preferred language.",
     "version": "1.0",
-    "description": "Translate and send WhatsApp messages in different languages",
     "permissions": [
-        "activeTab",
-        "scripting",
-        "storage",
-        "webNavigation"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://web.whatsapp.com/*"
-            ],
-            "js": [
-                "contentScript.js"
-            ]
-        }
+      "activeTab",
+      "scripting",
+      "storage",
+      "webNavigation"
     ],
     "action": {
-        "default_popup": "popup.html"
-    }
-}
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://web.whatsapp.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "host_permissions": [
+      "*://web.whatsapp.com/*"
+    ]
+  }
+  
